@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botões</title>
+    <style>
+      body {
+        font-family: fantasy;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .buttons > button {
+        margin: 20px;
+        font-family: fantasy;
+        border-radius: 30px;
+        width: 70px;
+        height: 40px;
+      }
+
+      p {
+        text-align: justify;
+        width: 45%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>EXPLICATIVO SOBRE OS RECURSOS DE UM WEBSITE</h1>
+    <div class="buttons">
+      <button
+        id="HTMLButton"
+        onclick="
+        if (document.getElementById('HTMLButton').style.backgroundColor == 'gray'){
+        document.getElementById('HTMLButton').style.backgroundColor = 'white'; 
+        document.getElementById('Text').innerHTML = ''
+        } else{
+        document.getElementById('HTMLButton').style.backgroundColor = 'gray'; 
+        document.getElementById('Text').innerHTML = 'HTML, a linguagem de marcação responsável por gerar as interfaces Web que estamos acostumados! Considere que de um corpo humano, seria como o esqueleto do mesmo!'
+        }
+        "
+      >
+        HTML
+      </button>
+      <button
+        id="CSSButton"
+        onclick="
+            if (document.getElementById('CSSButton').style.backgroundColor == 'gray'){
+            document.getElementById('CSSButton').style.backgroundColor = 'white'; 
+            document.getElementById('Text2').innerHTML = ''
+            } else{
+            document.getElementById('CSSButton').style.backgroundColor = 'gray'; 
+            document.getElementById('Text2').innerHTML = 'CSS, a parte estética do seu WebSite, considere que de um corpo humano, seriam as vestimentas e aspectos visuais!'
+        }"
+      >
+        CSS
+      </button>
+      <button
+        id="JSButton"
+        onclick="
+            if (document.getElementById('JSButton').style.backgroundColor == 'gray'){
+            document.getElementById('JSButton').style.backgroundColor = 'white'; 
+            document.getElementById('Text3').innerHTML = ''
+            } else{
+            document.getElementById('JSButton').style.backgroundColor = 'gray'; 
+            document.getElementById('Text3').innerHTML = 'JavaScript (JS), a parte funcional do site, como se fosse o cérebro humano, que comanda todas as funções de forma otimizada e coordenada com os outros organismos.'
+        }"
+      >
+        JavaScript
+      </button>
+      <button
+        id="DOMButton"
+        onclick="
+            if (document.getElementById('DOMButton').style.backgroundColor == 'gray'){
+            document.getElementById('DOMButton').style.backgroundColor = 'white'; 
+            document.getElementById('Text4').innerHTML = ''
+            } else{
+            document.getElementById('DOMButton').style.backgroundColor = 'gray'; 
+            document.getElementById('Text4').innerHTML = 'DOM, a representação clara sobre o quão maleável são os elementos de uma página, podendo ser modificados CADA DETALHE da mesma! Considere que do corpo humano, seriam os estudos por de trás de todos os funcionamentos, e como eles são interligados.'
+            }"
+      >
+        DOM
+      </button>
+    </div>
+    <p id="Text"></p>
+    <p id="Text2"></p>
+    <p id="Text3"></p>
+    <p id="Text4"></p>
+  </body>
+</html>
